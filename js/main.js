@@ -42,18 +42,15 @@ const PROYECTOS = [
     }
   },
   {
-    "img": "assets/web-atriaxsolutions.png",
-    "color": "linear-gradient(135deg, #ebecd6, #f8ee5e)",
-    "cat": "UX/UI Design",
-    "link": "https://atriaxsolutions.com",
-    "tags": [
-      "Mobile UX",
-      "Web",
-      "Prototype"
+    img: "assets/web-atriaxsolutions.png",
+  color: "linear-gradient(135deg, #ebecd6, #f8ee5e)",
+  cat: "UX/UI Design",
+  link: "./projects/atriaxsolutions.html",
+  tags: ["Web Design", "Responsive UI", "Conversion",
     ],
     "es": {
       "t": "AtriaXSolutions",
-      "d": "End-to-end product design for AtriaX Solutions, from branding to UX/UI and web, focused on clarity and conversion"
+      "d": "End-to-end brand and website design for Atria X Solutions, from logo and visual identity to a responsive corporate web experience."
     },
     "en": {
       "t": "Mental Wellness App",
