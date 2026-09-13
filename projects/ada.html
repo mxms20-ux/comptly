@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ADA - Project Page</title>
+
+  <link rel="icon" href="../assets/vermicstudios.jpg">
+  <link rel="stylesheet" href="./projects.css">
+</head>
+
+<body>
+
+
+  <!--========= Navbar =============================-->
+ <header class="mirror-navbar">
+  <div class="nav-container">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="side-nav">
+      <ul>
+        <li><a href="#research" class="nav-link">Research & Strategy</a></li>
+        <li><a href="#ideation" class="nav-link">Architecture and Ideation</a></li>
+        <li><a href="#design" class="nav-link">Prototyping & UI Design</a></li>
+        <li><a href="#validation" class="nav-link">Validation & Handoff</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- ================================ hero =================================================-->
+ <section class="project-hero">
+  <a href="../index.html" class="back-arrow">← Back to Home</a>
+
+  <div class="hero-card">
+    <div class="hero-card__top">
+      <img src="../assets/vermicstudios.jpg" alt="Vermic Studios" class="logo-inline">
+      <span class="hero-card__client">Vermic Studios</span>
+      <span class="hero-card__date">March 2024</span>
+    </div>
+
+    <h1> ✷ Ada project</h1>
+    <p class="hero-card__tagline">UX Research · Prototyping · UI Design</p>
+
+    <div class="hero-card__bottom">
+      <a class="btn-lang" href="ada-es.html" rel="alternate" hreflang="es">🇪🇸 Spanish</a>
+    </div>
+  </div>
+</section>
+
+  <!-- ================================ RESEARCH =================================================-->
+
+  <section class="project-description" id="research">
+    <h2>1. Research & Strategy</h2>
+
+      <!--=======================================Context=====================================================-->
+
+    <div class="context">
+      <h3>Context & The Business Challenge & System Friction</h3>
+     <p>
+ Vermic Studios holds a 30-year legacy in Mexican ed-tech, reaching 500+ schools and 100k+ households. To scale its market position, the company developed ADA. Despite high pedagogical value, the legacy platform faced high operational overhead: the internal editorial team was entirely dependent on engineering support tickets to deploy or modify curriculum content, crippling product scalability.
+</p>
+
+<p>
+  <strong>The Mandate:</strong>
+  Re-architect ADA into a self-managed, responsive digital ecosystem optimizing core tasks (search, download, assignment) across three conflicting roles: Teachers, Students, and Editorial Admins.
+</p>
+
+<p>
+  <strong>Service Design Insight:</strong>
+  Mapping the ecosystem revealed a strict operational domino effect. Backend operational bottlenecks within the administrative Editorial flow directly crippled Teacher efficiency in the classroom, which ultimately caused Student drop-offs. We could not fix client-facing retention without re-engineering administrative workflows first.
+</p>
+    </div>
+  <!--=======================================Empirical Data=====================================================-->
+
+
+    <div class="user-infraestructure">
+      <h3> Empirical Data & Strategic Directives </h3>
+      <p>
+  Research Framework: Mixed-methods infrastructure including quantitative surveys (N=117) and qualitative contextual depth interviews (N=8).
+</p>
+    </div>
+    <div class="key-findings">
+     <table class="impact-table">
+
+  <tr>
+    <td>
+      <strong>65% of students access</strong><br>
+      the platform exclusively via mobile devices.
+    </td>
+
+    <td>
+      Critical accessibility barriers, constant loss of credentials, and navigation frustration.
+    </td>
+
+    <td>
+      <strong>Mobile-First Approach:</strong><br>
+      Complete restructuring of the information architecture and radical simplification of the authentication flow.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Fragmented monitoring</strong><br>
+      by teachers (simultaneous use of WhatsApp, Excel, and Classroom).
+    </td>
+
+    <td>
+      Digital fatigue caused by the dispersion of tools required to manage a single class.
+    </td>
+
+    <td>
+      <strong>Centralized Dashboard:</strong><br>
+      Consolidation of features to reduce cognitive load.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>Loss of tracking</strong><br>
+      regarding homework submissions by students.
+    </td>
+
+    <td>
+      Demotivation and confusion regarding deadlines due to confusing interfaces.
+    </td>
+
+    <td>
+      <strong>Gamified Task Tracker:</strong><br>
+      Visual progress flow using completion bars.
+    </td>
+  </tr>
+</table>
+    </div>
+    <p>
+  <em>Contextual Realities</em>
+</p>
+<p>
+  <em>The Student:</em><br>
+  “I always forget my password... I have to wait for my mom to get home from work to help me log in.”
+</p>
+
+<p>
+  → Insight: Ed-tech accessibility must design around household operational constraints, not just software specs.
+</p>
+
+<p>
+  <em>The Teacher:</em><br>
+  “I review assignments on WhatsApp, write them down in my notebook, and then transfer them to Excel.”
+</p>
+
+<p>
+  → Insight: The product is not competing with rival platforms; it is competing with the established muscle memory of manual tools.
+</p>
+
+  <!--=======================================Metrics =====================================================-->
+
+<div class="metrics-section">
+<h3> Accountability Metrics & Success Targets </h3>
+
+<div class="metrics-table">
+
+  <div class="metrics-header">
+    <div>UX Metric</div>
+    <div>Product Objective</div>
+    <div>Success Target</div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">Task Step Reduction</div>
+
+    <div>
+      Optimize transactional journey efficiency.
+    </div>
+
+    <div>
+      20–30% reduction in active steps across search, download, and purchase flows.
+    </div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">Time-to-Task Completion</div>
+
+    <div>
+      Accelerate resource discoverability.
+    </div>
+
+    <div>
+      80%+ of users locate target assets in under 60 seconds via advanced filtering.
+    </div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">Task Success Rate (TSR)</div>
+
+    <div>
+      Validate system usability and layout structure.
+    </div>
+
+    <div>
+      Achieve an 85%+ error-free completion rate on core tasks without external help.
+    </div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">Perceived Trust Score</div>
+
+    <div>
+      Elevate institutional brand authority.
+    </div>
+
+    <div>
+      80%+ of users rate the interface as professional, organized, and secure.
+    </div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">Accessibility Compliance</div>
+
+    <div>
+      Secure inclusive educational access.
+    </div>
+
+    <div>
+      Achieve 90–95% compliance with WCAG 2.1 AA parameters.
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+  <!--=======================================Benchmark=====================================================-->
+
+
+<div class="benchmark-section">
+
+  <h3>Competitive Performance Benchmarking</h3>
+
+  <p>
+    Audited 4 major industry players against WCAG 2.1 AA accessibility baselines to identify strategic product gaps and interaction opportunities for ADA.
+  </p>
+
+  <div class="benchmark-table">
+
+    <div class="benchmark-row">
+      <div class="tool">
+        Khan Academy
+      </div>
+
+      <div class="analysis">
+        High-density yet clean information architecture optimized resource discoverability through strict hierarchical organization.
+      </div>
+
+      <div class="takeaway">
+        Adopted a structured navigation model:
+        Subject → Level → Lesson.
+      </div>
+    </div>
+
+    <div class="benchmark-row">
+      <div class="tool">
+        Smartick
+      </div>
+
+      <div class="analysis">
+        Effective use of progressive completion systems increased engagement without excessive visual noise.
+      </div>
+
+      <div class="takeaway">
+        Simplified progress tracking and reward visibility while preserving educational credibility.
+      </div>
+    </div>
+
+    <div class="benchmark-row">
+      <div class="tool">
+        ClassDojo
+      </div>
+
+      <div class="analysis">
+        Strong role-based separation reduced navigation confusion between teachers, students, and parents.
+      </div>
+
+      <div class="takeaway">
+        Implemented isolated user flows and protected visual accessibility standards.
+      </div>
+    </div>
+
+    <div class="benchmark-row">
+      <div class="tool">
+        Google Classroom
+      </div>
+
+      <div class="analysis">
+        Flexible deployment structure paired with accessible keyboard navigation improved usability at scale.
+      </div>
+
+      <div class="takeaway">
+        Prioritized operational flexibility and WCAG-compliant interaction patterns.
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <!--=======================================Constrains=====================================================-->
+
+<div class="constraints-section">
+  <h3>Core Project Constraints</h3>
+
+  <div class="constraints-grid">
+
+    <div class="constraint-item">
+      <span class="constraint-label">Technological</span>
+
+      <p>
+        Legacy database schemas restrict drastic structural modifications; layouts must adapt to current API limits.
+      </p>
+    </div>
+
+    <div class="constraint-item">
+      <span class="constraint-label">Operational & Temporal</span>
+
+      <p>
+        Limited engineering bandwidth requires progressive feature rollouts within a strict 6-to-8 week timeline.
+      </p>
+    </div>
+
+    <div class="constraint-item">
+      <span class="constraint-label">Contextual Environment</span>
+
+      <p>
+        Low-bandwidth school environments and low-end mobile hardware mandate lightweight, fast-loading visual assets.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+
+  <!--=======================================finished section=====================================================-->
+
+  </section>
+
+ 
+
+
+
+  <!-- ================================ ARCHITECTURE AND IDEATION =================================================-->
+
+  <section class="project-description" id="ideation">
+    <h2>2. Architecture & Ideation </h2>
+
+      <!--=======================================Context=====================================================-->
+
+<div class="Insights">
+
+  <h3>Translating Insights into System Architecture</h3>
+
+  <p>
+    To resolve the ecosystem fragmentation defined in the discovery phase, I translated our strategic directives into structural blueprints. The goal was to dismantle navigation complexity and design context-isolated structures for each user profile.
+  </p>
+
+  <p>
+    <strong>The Architectural Overhaul:</strong>
+    Consolidated the legacy platform's scattered views into three dedicated navigation paths. By restructuring the Information Architecture (IA), redundant categories were eliminated, ensuring that primary transactional actions (content discovery, task creation, and downloading) require minimal cognitive load.
+  </p>
+</div>
+
+
+
+  <h3>Task Flow Optimization & Friction Reduction</h3>
+     <p>
+I mapped and re-engineered core task flows to eliminate the drop-off risks identified during user research, specifically targeting the student authentication barrier and the teacher workflow fragmentation.</p>
+   
+<p>
+  <strong>Optimizing Student Authentication:</strong>
+The user flows were tailored for shared or low-end mobile devices. I designed simplified credential recovery and persistent session management to bypass the household operational barrier (students waiting for parents' phone access).</p>
+
+<p>
+  <strong>Automating Teaching Allocation Loops:</strong>
+Replaced the multi-tool workaround (switching between WhatsApp, Excel, and the platform) by designing a continuous, 3-step automated task creation and grading pipeline.</p>
+
+</div>
+
+<!-- USER FLOWS -->
+  <div class="user-flow-grid">
+
+    <div class="flow-card">
+      <img src="../assets/teacher-userflow.png" alt="Teacher user flow">
+      <p>Teacher workflow focused on task creation and content management.</p>
+    </div>
+
+    <div class="flow-card">
+      <img src="../assets/student-userflow.png" alt="Student user flow">
+      <p>Student navigation path optimized for content consumption.</p>
+    </div>
+
+    <div class="flow-card">
+      <img src="../assets/editorial-userflow.png" alt="Parent user flow">
+      <p>Parent experience simplified for monitoring and downloads.</p>
+    </div>
+
+  </div>
+
+ <div class="Ideation">
+      <h3>Ideation, Sketches & Feature Selection</h3>
+     <p>
+To transform user pain points into functional features, I led a rapid ideation phase focused on utility optimization and technical feasibility.</p>
+
+<p>
+  <strong>Low-Fidelity Conceptualization:</strong>
+ Translated strategic directives into paper sketches and low-fidelity wireframes. This allowed for immediate interaction testing, focusing on creating clean grid layouts for the teacher dashboard and simplified touch targets for the student mobile interface.
+</p>
+
+  <h3>Feature Priorization & MVP Scope </h3>
+     <p>
+Operating under a strict 8-week delivery constraint, I utilized an Impact vs. Feasibility Matrix to establish a ruthless MVP scope. This ensured engineering alignment and prevented scope creep.</p>
+   
+<p>
+  <strong>High-Impact Priority (MVP):</strong>
+Mobile-first student task trackers, centralized teacher dashboard modules, and core administrative content-upload tools for the editorial team.</p>
+
+<p>
+  <strong>Strategic Trade-offs:</strong>
+Advanced internal messaging, deep community forums, and high-fidelity personalization settings were systematically deprioritized for post-launch sprints to protect the core release timeline.</p>
+
+</div>
+
+
+
+
+
+
+
+  <!-- ================================ DESIGN =================================================-->
+
+  <section class="project-description prototype-section" id="design">
+  
+  <h2>3. Prototyping & UI Design</h2>
+
+  <div class="design-system-showcase">
+    <div class="ds-text">
+      <h3>Scalable Component Architecture</h3>
+      <p class="ds-intro">To ensure frontend engineering could execute the 8-week sprint without friction, I established a foundational, modular UI component library.</p>
+      
+      <div class="ds-feature">
+        <strong>System Scalability:</strong>
+        <p>Built utilizing atomic design principles, ensuring the internal Editorial team can scale layout variations in the future without breaking the grid structure.</p>
+      </div>
+
+      <div class="ds-feature">
+        <strong>Accessibility Compliance:</strong>
+        <p>Core color palettes and typography scales were strictly audited to meet WCAG 2.1 AA standards, guaranteeing high contrast ratios for low-end mobile screens used by the student cohort.</p>
+      </div>
+    </div>
+    
+    <div class="ds-image-wrapper">
+      <img src="../assets/design-system-ui.png" alt="Design System and UI Kit">
+    </div>
+  </div>
+
+  <div class="mvp-flows-header">
+    <h3>Executing the MVP Core Flows</h3>
+    <p>The high-fidelity execution focused exclusively on resolving the primary operational bottlenecks identified in the systemic research.</p>
+  </div>
+
+  <div class="ui-flows-grid">
+    
+    <div class="ui-flow-card">
+      <div class="ui-image-container">
+        <img src="../assets/teacher-dashboard-ui.png" alt="Teacher Dashboard High Fidelity">
+      </div>
+      <div class="ui-text-container">
+        <h4>1. Centralized Teacher Dashboard</h4>
+        <p>Replaced fragmented workflows (WhatsApp + Excel) with a unified command center. Teachers can now track cohort performance, grade assignments, and distribute materials within a single cognitive space.</p>
+      </div>
+    </div>
+
+    <div class="ui-flow-card">
+      <div class="ui-image-container">
+        <img src="../assets/student-mobile-ui.png" alt="Student Mobile Experience">
+      </div>
+      <div class="ui-text-container">
+        <h4>2. Mobile-First Student Experience</h4>
+        <p>Engineered specifically for mobile constraints. Incorporated gamified completion bars and frictionless task-tracking modules to dramatically reduce assignment drop-offs and missed deadlines.</p>
+      </div>
+    </div>
+
+    <div class="ui-flow-card">
+      <div class="ui-image-container">
+        <img src="../assets/editorial-engine-ui.png" alt="Editorial Autonomy Engine">
+      </div>
+      <div class="ui-text-container">
+        <h4>3. Editorial Autonomy Engine</h4>
+        <p>Delivered drag-and-drop structural layouts, entirely eliminating the engineering dependency for routine curriculum updates.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+</
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--=======================================button=====================================================-->
+  <button id="scrollToTopBtn">↑</button>
+
+
+  <script src="../js/button.js"></script>
+   <script src="nav.js"></script>
+
+</body>
+
+</html>
