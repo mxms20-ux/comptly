@@ -3,6 +3,66 @@
 // =============================================
 
 const PROYECTOS = [
+  // 1. Atria X Solutions
+  {
+    "img": "assets/web-atriaxsolutions.png",
+    "color": "linear-gradient(135deg, #ebecd6, #f8ee5e)",
+    "cat": "UX/UI Design",
+    "link": "./projects/atriaxsolutions.html",
+    "tags": [
+      "Web Design",
+      "Responsive UI",
+      "Conversion"
+    ],
+    "en": {
+      "t": "Atria X Solutions",
+      "d": "End-to-end brand and website design for Atria X Solutions, from logo and visual identity to a responsive corporate web experience."
+    },
+    "es": {
+      "t": "Atria X Solutions",
+      "d": "Diseño integral de marca y sitio web para Atria X Solutions, desde el logotipo e identidad visual hasta una experiencia web corporativa responsiva."
+    }
+  },
+   // 2. SANCTORUM
+  {
+  "img": "assets/azul_traasp.png",
+  "color": "linear-gradient(135deg, #e8e1f5, #f5e5d8)",
+  "cat": "UX/UI Design",
+  "link": "./projects/santos-catolicos.html",
+  "tags": [
+    "Product Design",
+    "UX Research",
+    "UI Design"
+  ],
+  "en": {
+    "t": "Sanctorum",
+    "d": "Digital experience focused on bringing Catholic saints closer to younger audiences through an engaging and accessible platform."
+  },
+  "es": {
+    "t": "Sanctorum",
+    "d": "Diseño de una experiencia digital que busca acercar la vida de los santos católicos a los jóvenes mediante una plataforma atractiva y accesible."
+  }
+},
+{
+  "img": "assets/cristabela.png",
+  "color": "linear-gradient(135deg, #f5dce5, #f8e9c8)",
+  "cat": "UX/UI Design",
+  "link": "./projects/cristabela.html",
+  "tags": [
+    "UX Research",
+    "Redesign",
+    "Responsive UI"
+  ],
+  "en": {
+    "t": "Cristabela – Playroom",
+    "d": "UX/UI redesign of a children's playroom website, focused on improving navigation, visual communication, and the overall user experience."
+  },
+  "es": {
+    "t": "Cristabela – Ludoteca",
+    "d": "Rediseño UX/UI del sitio web de una ludoteca, enfocado en mejorar la navegación, la comunicación visual y la experiencia general de sus usuarios."
+  }
+},
+  // 3. Adi - Education App
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
@@ -11,17 +71,18 @@ const PROYECTOS = [
     "tags": [
       "Figma",
       "UX Research",
-      "Prototipes"
+      "Prototypes"
     ],
-    "es": {
-      "t": "Ada - Education App",
-      "d": "Complete UX redesign of an educational platform designed for students, teachers, and young learners, improving user retention"
-    },
     "en": {
-      "t": "Education App",
-      "d": "Complete UX redesign of an educational platform designed for students, teachers, and young learners, improving user retention"
+      "t": "Adi - Education App",
+      "d": "Complete UX redesign of an educational platform designed for students, teachers, and young learners, improving user retention."
+    },
+    "es": {
+      "t": "Adi - App Educativa",
+      "d": "Rediseño UX completo de una plataforma educativa diseñada para estudiantes, profesores y jóvenes aprendices, mejorando la retención de usuarios."
     }
   },
+   // 2. Vogue
   {
     "img": "assets/vogue.png",
     "color": "linear-gradient(135deg, #dbeafe, #f7efef)",
@@ -32,31 +93,18 @@ const PROYECTOS = [
       "Figma",
       "Tokens"
     ],
-    "es": {
+    "en": {
       "t": "Vogue",
       "d": "Redesign of the Vogue platform with key improvements to usability, performance, and user experience."
     },
-    "en": {
-      "t": "Healthcare Design System",
-      "d": "Complete design system with 80+ reusable components for a medical platform."
-    }
-  },
-  {
-    img: "assets/web-atriaxsolutions.png",
-  color: "linear-gradient(135deg, #ebecd6, #f8ee5e)",
-  cat: "UX/UI Design",
-  link: "./projects/atriaxsolutions.html",
-  tags: ["Web Design", "Responsive UI", "Conversion",
-    ],
     "es": {
-      "t": "AtriaXSolutions",
-      "d": "End-to-end brand and website design for Atria X Solutions, from logo and visual identity to a responsive corporate web experience."
-    },
-    "en": {
-      "t": "Mental Wellness App",
-      "d": "Mobile app designed from scratch: onboarding flows, guided meditation and habit tracking."
+      "t": "Vogue",
+      "d": "Rediseño de la plataforma Vogue con mejoras clave en usabilidad, rendimiento y experiencia de usuario."
     }
   },
+
+  
+  // 4. Beojnamu Ecommerce
   {
     "img": "assets/ecommerce.webp",
     "color": "linear-gradient(135deg, #dbeafe, #eec0b4)",
@@ -67,164 +115,165 @@ const PROYECTOS = [
       "Wireframes",
       "Figma"
     ],
-    "es": {
+    "en": {
       "t": "Beojnamu Ecommerce",
       "d": "Korean fashion e-commerce platform with UX audit and full redesign to improve the shopping experience."
     },
-    "en": {
-      "t": "Educational Portal Redesign",
-      "d": "UX audit and full redesign of an e-learning platform with 20,000+ students."
+    "es": {
+      "t": "Beojnamu Ecommerce",
+      "d": "Plataforma de comercio electrónico de moda coreana con auditoría UX y rediseño completo para mejorar la experiencia de compra."
     }
   },
+  // 5. Los demás proyectos...
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Desarrollo Web",
+    "cat": "Web Development",
     "link": "https://example.com",
     "tags": [
       "React",
       "Shopify",
       "CSS"
     ],
-    "es": {
-      "t": "Tienda online de moda sostenible",
-      "d": "E-commerce responsivo con experiencia de compra fluida y conversión optimizada al 4.2%."
-    },
     "en": {
       "t": "Sustainable Fashion Store",
       "d": "Responsive e-commerce with smooth shopping experience and 4.2% conversion rate."
+    },
+    "es": {
+      "t": "Tienda online de moda sostenible",
+      "d": "E-commerce responsivo con experiencia de compra fluida y conversión optimizada al 4.2%."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Desarrollo Web",
+    "cat": "Web Development",
     "link": "https://example.com",
     "tags": [
       "React",
       "Node.js",
       "Maps API"
     ],
-    "es": {
-      "t": "Plataforma de rentas vacacionales",
-      "d": "Sitio web con mapa interactivo, búsqueda avanzada y sistema de reservas en línea."
-    },
     "en": {
       "t": "Vacation Rental Platform",
       "d": "Web platform with interactive map, advanced search and online booking system."
+    },
+    "es": {
+      "t": "Plataforma de rentas vacacionales",
+      "d": "Sitio web con mapa interactivo, búsqueda avanzada y sistema de reservas en línea."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Desarrollo Web",
+    "cat": "Web Development",
     "link": "https://example.com",
     "tags": [
       "HTML",
       "CSS",
       "JS"
     ],
-    "es": {
-      "t": "Landing page para podcast",
-      "d": "Landing de alta conversión para el lanzamiento de un podcast, logrando 1,200 suscriptores el primer mes."
-    },
     "en": {
       "t": "Podcast Landing Page",
       "d": "High-conversion landing page for a podcast launch, achieving 1,200 subscribers in the first month."
+    },
+    "es": {
+      "t": "Landing page para podcast",
+      "d": "Landing de alta conversión para el lanzamiento de un podcast, logrando 1,200 suscriptores el primer mes."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Desarrollo Web",
+    "cat": "Web Development",
     "link": "https://example.com",
     "tags": [
       "Vue.js",
       "Dashboard",
       "API REST"
     ],
-    "es": {
-      "t": "Dashboard de análisis de datos",
-      "d": "Panel de control interactivo para una empresa de logística con visualización en tiempo real de 15 métricas."
-    },
     "en": {
       "t": "Data Analytics Dashboard",
       "d": "Interactive control panel for a logistics company with real-time visualization of 15+ key business metrics."
+    },
+    "es": {
+      "t": "Dashboard de análisis de datos",
+      "d": "Panel de control interactivo para una empresa de logística con visualización en tiempo real de 15 métricas."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Conferencia",
+    "cat": "Talks",
     "link": "https://youtube.com",
     "tags": [
       "TEDx",
       "Design Thinking"
     ],
-    "es": {
-      "t": "“Diseñando el futuro” – TEDx",
-      "d": "Charla ante 800 personas sobre el impacto del diseño centrado en el humano. +50,000 vistas en YouTube."
-    },
     "en": {
       "t": "“Designing the Future” – TEDx",
       "d": "Talk for 800 people on the impact of human-centered design. 50,000+ views on YouTube."
+    },
+    "es": {
+      "t": "“Diseñando el futuro” – TEDx",
+      "d": "Charla ante 800 personas sobre el impacto del diseño centrado en el humano. +50,000 vistas en YouTube."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Conferencia",
+    "cat": "Talks",
     "link": "https://campusparty.com",
     "tags": [
       "Taller",
       "Startup",
       "Campus Party"
     ],
-    "es": {
-      "t": "“UX para startups” – Campus Party",
-      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
-    },
     "en": {
       "t": "“UX for Startups” – Campus Party",
       "d": "3-hour workshop for 200 entrepreneurs on applying UX with limited resources."
+    },
+    "es": {
+      "t": "“UX para startups” – Campus Party",
+      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Conferencia",
+    "cat": "Talks",
     "link": "https://unam.mx",
     "tags": [
       "Universidad",
       "Inspiración",
       "LATAM"
     ],
-    "es": {
-      "t": "Diseño e Innovación – UNAM",
-      "d": "Conferencia magistral para 300 estudiantes de diseño sobre la industria del UX/UI en LATAM."
-    },
     "en": {
       "t": "Design & Innovation – UNAM",
       "d": "Keynote for 300 design students on the real UX/UI industry in LATAM."
+    },
+    "es": {
+      "t": "Diseño e Innovación – UNAM",
+      "d": "Conferencia magistral para 300 estudiantes de diseño sobre la industria del UX/UI en LATAM."
     }
   },
   {
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
-    "cat": "Conferencia",
+    "cat": "Talks",
     "link": "https://example.com",
     "tags": [
       "Producto",
       "Empresarial",
       "Workshop"
     ],
-    "es": {
-      "t": "“Producto centrado en el usuario” – Santander",
-      "d": "Workshop corporativo de 2 días para el equipo de producto de Santander México."
-    },
     "en": {
       "t": "“User-Centered Product” – Santander",
       "d": "2-day corporate workshop for Santander Mexico product team on user-centered design methodologies."
+    },
+    "es": {
+      "t": "“Producto centrado en el usuario” – Santander",
+      "d": "Workshop corporativo de 2 días para el equipo de producto de Santander México."
     }
   }
 ];
@@ -232,9 +281,9 @@ const PROYECTOS = [
 // =============================================
 // ESTADO
 // =============================================
-let catActiva = "Todos";
+let catActiva = "All";
 let idx       = 0;
-let lang      = "es";
+let lang      = "en";
 const POR_PAG = 4;
 
 // =============================================
@@ -264,12 +313,23 @@ document.querySelectorAll(".marca-logo").forEach(img => {
 // PORTAFOLIO — helpers
 // =============================================
 function filtered() {
-  return catActiva === "Todos" ? PROYECTOS : PROYECTOS.filter(p => p.cat === catActiva);
+  return catActiva === "All" ? PROYECTOS : PROYECTOS.filter(p => p.cat === catActiva);
 }
 function pages(arr) {
   const r = [];
   for (let i = 0; i < arr.length; i += POR_PAG) r.push(arr.slice(i, i + POR_PAG));
   return r;
+}
+
+// Diccionario de traducción para las categorías
+function traducirCategoria(cat, idioma) {
+  const mapa = {
+    "All": { en: "All", es: "Todos" },
+    "UX/UI Design": { en: "UX/UI Design", es: "UX/UI Design" },
+    "Web Development": { en: "Web Development", es: "Desarrollo Web" },
+    "Talks": { en: "Talks", es: "Conferencia" }
+  };
+  return mapa[cat] ? mapa[cat][idioma] : cat;
 }
 
 // =============================================
@@ -279,18 +339,12 @@ function renderTabs() {
   const tabs = document.getElementById("portfolio-tabs");
   if (!tabs) return;
 
-  const cats = ["Todos", "UX/UI Design", "Desarrollo Web", "Conferencia"];
+  const cats = ["All", "UX/UI Design", "Web Development", "Talks"];
 
   tabs.innerHTML = cats.map(c => {
+    const label = traducirCategoria(c, lang);
 
-    const label = lang === "en" ? c : (
-      c === "Todos" ? "All" :
-      c === "Desarrollo Web" ? "Web Development" :
-      c === "Conferencia" ? "Talks" :
-      c 
-    );
-
-    const cnt = c === "Todos"
+    const cnt = c === "All"
       ? PROYECTOS.length
       : PROYECTOS.filter(p => p.cat === c).length;
 
@@ -305,12 +359,11 @@ function renderTabs() {
 
 function renderPortfolio() {
   const track = document.getElementById("carrusel-track");
-  if (!track) return; // 👈 protección clave
+  if (!track) return;
 
   const titulo = document.getElementById("portfolio-titulo");
   if (titulo) {
-    titulo.textContent =
-     lang === "en" ? "Proyectos destacados" : "Featured Projects";
+    titulo.textContent = lang === "en" ? "Featured Projects" : "Proyectos destacados";
   }
 
   const pags = pages(filtered());
@@ -322,17 +375,17 @@ function renderPortfolio() {
     const cards = pag.map(p => `
       <div class="project-card">
        <div class="project-thumbnail" style="background:${p.color}">
-  <img src="${p.img}" alt="${p[lang].t}" class="project-img" />
-</div>
+         <img src="${p.img}" alt="${p[lang].t}" class="project-img" />
+       </div>
         <div class="project-card-body">
-          <div class="project-category">${p.cat}</div>
+          <div class="project-category">${traducirCategoria(p.cat, lang)}</div>
           <h3>${p[lang].t}</h3>
           <p>${p[lang].d}</p>
           <div class="project-tags">
             ${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}
           </div>
           <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="btn-ver-proyecto">
-            ${lang === "en" ? "Ver proyecto" : "View project"}
+            ${lang === "en" ? "View project" : "Ver proyecto"}
             <span class="btn-arrow">&#x2197;</span>
           </a>
         </div>
@@ -363,8 +416,8 @@ function renderPortfolio() {
   if (counter) {
     counter.textContent =
       lang === "en"
-        ? `Página ${idx + 1} de ${tot}`
-        : `Page ${idx + 1} of ${tot}`;
+        ? `Page ${idx + 1} of ${tot}`
+        : `Página ${idx + 1} de ${tot}`;
   }
 }
 
@@ -434,8 +487,9 @@ if (btnEs && btnEn) {
     btnEs.classList.add("active");
     btnEn.classList.remove("active");
 
-    traducirPagina();   // 👈 global
-    renderPortfolio();  // 👈 dinámico
+    if (typeof traducirPagina === "function") traducirPagina();
+    renderTabs();
+    renderPortfolio();
   });
 
   btnEn.addEventListener("click", () => {
@@ -444,7 +498,8 @@ if (btnEs && btnEn) {
     btnEn.classList.add("active");
     btnEs.classList.remove("active");
 
-    traducirPagina();
+    if (typeof traducirPagina === "function") traducirPagina();
+    renderTabs();
     renderPortfolio();
   });
 }
@@ -468,6 +523,7 @@ if (contactForm) {
     }, 5000);
   });
 }
+
 // =============================================
 // CONTADORES DEL HERO
 // =============================================
@@ -538,3 +594,8 @@ if (scrollBtn) {
 
 renderTabs();
 renderPortfolio();
+
+
+
+
+

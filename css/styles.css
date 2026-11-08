@@ -237,7 +237,7 @@ section {
   display: block;
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-text);
+  color: #9a98a3;
   letter-spacing: -1px;
 }
 .stat-item span {
@@ -1160,3 +1160,29 @@ section {
     font-size: 16px;
   }
 }
+
+
+.tl-tech {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.tl-tech span {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #f0efff;
+  color: #5146d8;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+
+
+
+
