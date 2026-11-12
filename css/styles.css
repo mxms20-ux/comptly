@@ -44,6 +44,91 @@ section {
 }
 
 
+
+/* Palabras destacadas */
+.hero h1 .highlight {
+  position: relative;
+  display: inline-block;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+/* Subrayado orgánico */
+.hero h1 .highlight::after {
+  content: "";
+  position: absolute;
+
+  left: 1%;
+  bottom: -5px;
+
+  width: 98%;
+  height: 5px;
+
+  background: var(--color-accent);
+
+  /* Curvatura ligera */
+  border-radius: 50% 45% 55% 40% /
+                 70% 60% 80% 65%;
+
+  clip-path: polygon(
+    0% 45%,
+    15% 25%,
+    40% 35%,
+    65% 15%,
+    85% 30%,
+    100% 45%,
+    100% 85%,
+    70% 75%,
+    35% 90%,
+    0% 80%
+  );
+
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Variación para built */
+.hero h1 .highlight:nth-of-type(2)::after {
+  height: 4px;
+  clip-path: polygon(
+    0% 35%,
+    25% 20%,
+    55% 40%,
+    80% 25%,
+    100% 40%,
+    100% 85%,
+    60% 75%,
+    30% 90%,
+    0% 80%
+  );
+}
+
+
+/* ==================================
+   HERO — AJUSTES MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+
+  /* Ocultar subrayado personalizado en móvil */
+  .hero h1 .highlight::after {
+    display: none;
+  }
+
+  /* Subrayado nativo para móvil */
+  .hero h1 .highlight {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+  }
+}
+
+
+
+
+
 /* ---- NAVBAR ---- */
 
 .navbar {
@@ -100,10 +185,101 @@ section {
   color: var(--color-text-muted);
   transition: color 0.2s;
 }
-
 .navbar-links a:hover {
-  color: var(--color-text);
+  color: #4338CA;
 }
+
+
+
+
+
+
+/* ==================================
+   NAVBAR — CORCHETES EDITORIALES
+================================== */
+
+/* Separación entre enlaces */
+.navbar-links {
+  gap: 48px;
+}
+
+/* Solo enlaces de navegación */
+.navbar-links a:not(.btn-primary):not(.navbar-cta) {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Corchetes editoriales */
+.navbar-links a:not(.btn-primary):not(.navbar-cta)::before,
+.navbar-links a:not(.btn-primary):not(.navbar-cta)::after {
+  position: absolute;
+  top: 50%;
+
+  color: #6366F1;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Corchete izquierdo */
+.navbar-links a:not(.btn-primary):not(.navbar-cta)::before {
+  content: "[";
+  left: -19px;
+  transform: translate(4px, -50%);
+}
+
+/* Corchete derecho */
+.navbar-links a:not(.btn-primary):not(.navbar-cta)::after {
+  content: "]";
+  right: -18px;
+  transform: translate(-4px, -50%);
+}
+
+/* Hover del texto */
+.navbar-links a:not(.btn-primary):not(.navbar-cta):hover {
+  color: #4338CA;
+}
+
+/* Aparición de los corchetes */
+.navbar-links a:not(.btn-primary):not(.navbar-cta):hover::before,
+.navbar-links a:not(.btn-primary):not(.navbar-cta):hover::after,
+.navbar-links a:not(.btn-primary):not(.navbar-cta):focus-visible::before,
+.navbar-links a:not(.btn-primary):not(.navbar-cta):focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+/* Accesibilidad con teclado */
+.navbar-links a:not(.btn-primary):not(.navbar-cta):focus-visible {
+  color: #4338CA;
+  outline-offset: 5px;
+}
+
+/* Movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-links a:not(.btn-primary):not(.navbar-cta),
+  .navbar-links a:not(.btn-primary):not(.navbar-cta)::before,
+  .navbar-links a:not(.btn-primary):not(.navbar-cta)::after {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Botón principal */
 .navbar-cta {
@@ -724,15 +900,49 @@ section {
   margin: 0 auto;
 }
 
+
+/* SECTION LABEL */
 .section-label {
   display: inline-block;
-  font-size: 0.78rem;
+  position: relative;
+  font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
+
+/* Subrayado editorial */
+.section-label::after {
+  content: "";
+  position: absolute;
+
+  left: 2%;
+  bottom: -5px;
+  width: 96%;
+  height: 3px;
+
+  background: var(--color-accent);
+  border-radius: 60% 40% 55% 45%;
+
+  clip-path: polygon(
+    0% 45%,
+    15% 25%,
+    40% 35%,
+    65% 15%,
+    85% 30%,
+    100% 45%,
+    100% 85%,
+    70% 75%,
+    35% 90%,
+    0% 80%
+  );
+
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 
 .section-title {
   font-size: 2.4rem;
@@ -1592,6 +1802,166 @@ section {
 }
 
 
+
+
+
+
+/* ==================================
+   HERO — MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  /* Título y descripción */
+  .hero-badge {
+    order: 1;
+    align-self: flex-start;
+  }
+
+  .hero h1 {
+    order: 2;
+  }
+
+  .hero-content > p {
+    order: 3;
+  }
+
+  /* Tarjeta visual */
+  .hero-visual {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    order: 4;
+
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* Estadísticas */
+  .hero-stats {
+    order: 5;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* Botones al final */
+  .hero-actions {
+    order: 6;
+    width: 100%;
+  }
+}
+
+
+
+/* ==================================
+   HERO — PANTALLAS PEQUEÑAS
+================================== */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 32px;
+  }
+
+  /* Contenido */
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.3rem);
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Contenedor visual */
+  .hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  /* Tarjeta principal */
+  .hero-card-main {
+    width: 100%;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  /* Encabezado de la tarjeta */
+  .hero-card-header {
+    gap: 10px;
+  }
+
+  .hero-card-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .hero-card-info {
+    min-width: 0;
+  }
+
+  .hero-card-info strong {
+    font-size: 0.85rem;
+  }
+
+  .hero-card-info span {
+    font-size: 0.72rem;
+  }
+
+  /* Mockup interno */
+  .hero-card-mockup {
+    padding: 12px;
+  }
+
+  .mockup-box {
+    height: 55px;
+  }
+
+  /* Etiquetas */
+  .hero-card-tags {
+    gap: 6px;
+  }
+
+  .hero-card-tags .tag {
+    font-size: 0.68rem;
+    padding: 5px 9px;
+  }
+
+  /* Estadísticas */
+  .hero-stats {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Botones */
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions a {
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 
 
