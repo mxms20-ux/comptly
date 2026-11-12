@@ -1390,3 +1390,86 @@ img.medium {
     margin-top: 0;
   }
 }
+
+
+
+.titulo-ovalo {
+  position: relative;
+  display: inline-block;
+  padding: 0.1em 0.5em; 
+}
+
+.titulo-ovalo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  
+  border: 3px solid #3e6b98; 
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transform: rotate(-1deg);
+  pointer-events: none;
+}
+
+
+/* CRISTABELA — EXISTING PLATFORM */
+
+
+/* CRISTABELA — IMAGE HOVER ZOOM */
+
+.gallery-block .references-grid {
+  overflow: visible;
+}
+
+.gallery-block .references-grid .grid-item {
+  position: relative;
+  overflow: visible;
+}
+
+.gallery-block .references-grid .grid-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  background: #f8f8f8;
+  border-radius: 12px;
+  cursor: zoom-in;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  transform-origin: center center;
+  position: relative;
+  z-index: 1;
+}
+
+/* HOVER */
+@media (hover: hover) and (pointer: fine) {
+  .gallery-block .references-grid .grid-item:hover {
+    z-index: 10;
+  }
+
+  .gallery-block .references-grid .grid-item img:hover {
+    transform: scale(1.8);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    z-index: 20;
+    cursor: zoom-out;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .gallery-block .references-grid .grid-item img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-block .references-grid .grid-item img {
+    transition: none;
+  }
+}
