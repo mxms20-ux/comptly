@@ -242,6 +242,82 @@ const PROYECTOS = [
     "img": "assets/capturalogin.png",
     "color": "linear-gradient(135deg, #dbeafe, #439472)",
     "cat": "Talks",
+    "link": "https://campusparty.com",
+    "tags": [
+      "Taller",
+      "Startup",
+      "Campus Party"
+    ],
+    "en": {
+      "t": "“UX for Startups” – Campus Party",
+      "d": "3-hour workshop for 200 entrepreneurs on applying UX with limited resources."
+    },
+    "es": {
+      "t": "“UX para startups” – Campus Party",
+      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
+    }
+  },
+  {
+    "img": "assets/capturalogin.png",
+    "color": "linear-gradient(135deg, #dbeafe, #439472)",
+    "cat": "Talks",
+    "link": "https://campusparty.com",
+    "tags": [
+      "Taller",
+      "Startup",
+      "Campus Party"
+    ],
+    "en": {
+      "t": "“UX for Startups” – Campus Party",
+      "d": "3-hour workshop for 200 entrepreneurs on applying UX with limited resources."
+    },
+    "es": {
+      "t": "“UX para startups” – Campus Party",
+      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
+    }
+  },
+  {
+    "img": "assets/capturalogin.png",
+    "color": "linear-gradient(135deg, #dbeafe, #439472)",
+    "cat": "Talks",
+    "link": "https://campusparty.com",
+    "tags": [
+      "Taller",
+      "Startup",
+      "Campus Party"
+    ],
+    "en": {
+      "t": "“UX for Startups” – Campus Party",
+      "d": "3-hour workshop for 200 entrepreneurs on applying UX with limited resources."
+    },
+    "es": {
+      "t": "“UX para startups” – Campus Party",
+      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
+    }
+  },
+  {
+    "img": "assets/capturalogin.png",
+    "color": "linear-gradient(135deg, #dbeafe, #439472)",
+    "cat": "Talks",
+    "link": "https://campusparty.com",
+    "tags": [
+      "Taller",
+      "Startup",
+      "Campus Party"
+    ],
+    "en": {
+      "t": "“UX for Startups” – Campus Party",
+      "d": "3-hour workshop for 200 entrepreneurs on applying UX with limited resources."
+    },
+    "es": {
+      "t": "“UX para startups” – Campus Party",
+      "d": "Taller de 3 horas para 200 emprendedores sobre cómo aplicar UX con recursos limitados."
+    }
+  },
+  {
+    "img": "assets/capturalogin.png",
+    "color": "linear-gradient(135deg, #dbeafe, #439472)",
+    "cat": "Talks",
     "link": "https://unam.mx",
     "tags": [
       "Universidad",
